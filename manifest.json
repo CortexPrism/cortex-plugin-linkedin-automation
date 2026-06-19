@@ -1,0 +1,26 @@
+{
+  "name": "cortex-plugin-linkedin-automation",
+  "version": "1.0.0",
+  "description": "LinkedIn Automation & Social Selling — LinkedIn Sales Navigator/Recruiter for outreach sequences and profile enrichment",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-linkedin-automation",
+  "homepage": "https://cortexprism.io/marketplace/plugins/linkedin-automation",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "linkedin_search", "description": "Search profiles with filters", "params": [] },
+    { "name": "linkedin_outreach", "description": "Create outreach sequence", "params": [] },
+    {
+      "name": "linkedin_track",
+      "description": "Track connection and response rates",
+      "params": []
+    },
+    { "name": "linkedin_enrich", "description": "Enrich profile with company data", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
